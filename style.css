@@ -1,30 +1,10 @@
-@font-face {
-    font-family: PoppinsBold ;
-    src: url(Projeto-VitralArte-main/Font/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: OpenSans-Regular;
-    src: url(Projeto-VitralArte-main/Font/OpenSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: PoppinsRegular ;
-    src: url(Projeto-VitralArte-main/Font/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: PoppinsBold ;
-    src: url(Projeto-VitralArte-main/Font/Poppins-Bold.ttf);
-}
-
 /* RESET CSS */
 
 *{
     border: 0;
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing:border-box ;
 }
 
 a {
@@ -33,74 +13,71 @@ a {
 
 img {
     width: 100%;
-    height: auto ;
+    height: auto;
 }
 
 /* FIM DO RESET */
 
-/* CONTAINER */
+/* FONTES */
 
-.container {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin: 0 200px;
-    flex-wrap: wrap;
+@font-face {
+    font-family: 'Open-Sans Regular';
+    src: url(Projeto-VitralArte-main/Font/OpenSans-Regular.ttf);
 }
 
-/* FIM CONTAINER */
+@font-face {
+    font-family: 'Open-Sans Bold';
+    src: url(Projeto-VitralArte-main/Font/OpenSans-Bold.ttf);
+}
 
-/* Header */
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(Projeto-VitralArte-main/Font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(Projeto-VitralArte-main/Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url(Projeto-VitralArte-main/Font/Roboto-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(Projeto-VitralArte-main/Font/Roboto-Regular.ttf);
+}
+
+/* FIM DAS FONTES */
+
+.container{
+    align-items: center;
+    margin: 0 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
 #header {
     background-color: #106EEA;
 }
 
 .email {
-    font: 400 20px 'OpenSans-Regular', sans-serif;
     color: white;
+    font: 500 20px 'Open-Sans Regular', sans-serif;
 }
 
 .tel {
-    font: 400 20px 'OpenSans-Regular', sans-serif;
     color: white;
-    margin-left: 120px;
+    font: 500 20px 'Open-Sans Regular', sans-serif;
 }
 
 .contato {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-/* FIM DO HEADER */
-
-/* MAIN */
-
-.nome {
-    font: 700 45px 'PoppinsBold', sans-serif;
-}
-
-.item {
-    font: 400 22px 'OpenSans-Regular', sans-serif;
-    color: black;
-    margin-left: 50px;
-}
-
-.inicio {
-    margin: -338px 0 350px 645px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-right: 30px;
+    padding-right: 30px;
     
 }
-
-.titulo {
-    font: 700 60px 'PoppinsBold', sans-serif;
-}
-
-.especialistas {
-    font: 400 38px 'PoppinsRegular', sans-serif;
-}
-
-/* SOBRE NÓS */
-
