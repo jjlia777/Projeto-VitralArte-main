@@ -1,28 +1,16 @@
-/* RESET CSS */
-
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
+@font-face {
+    font-family: 'PoppinsBold' ;
+    src: url(Projeto-VitralArte-main/Font/Poppins-Bold.ttf);
 }
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-/* FIM DO RESET */
-
-/* FONTES */
 
 @font-face {
-    font-family: 'Open-Sans Regular';
+    font-family: 'OpenSans-Regular' ;
     src: url(Projeto-VitralArte-main/Font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PoppinsRegular' ;
+    src: url(Projeto-VitralArte-main/Font/Poppins-Regular.ttf);
 }
 
 @font-face {
@@ -31,53 +19,373 @@ img {
 }
 
 @font-face {
-    font-family: 'Poppins Regular';
-    src: url(Projeto-VitralArte-main/Font/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'Poppins Bold';
-    src: url(Projeto-VitralArte-main/Font/Poppins-Bold.ttf);
-}
-
-@font-face {
     font-family: 'Roboto Regular';
     src: url(Projeto-VitralArte-main/Font/Roboto-Regular.ttf);
 }
 
-
 @font-face {
     font-family: 'Roboto Bold';
-    src: url(Projeto-VitralArte-main/Font/Roboto-Regular.ttf);
+    src: url(Projeto-VitralArte-main/Font/Roboto-Bold.ttf);
 }
 
-/* FIM DAS FONTES */
+/* RESET CSS */
 
-.container{
-    align-items: center;
-    margin: 0 150px;
-    display: flex;
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto ;
+}
+
+/* FIM DO RESET */
+
+/* CONTAINER */
+
+.container {
     justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 200px;
+    flex-wrap: wrap;
 }
 
-/* HEADER */
+/* FIM CONTAINER */
 
+/* Header */
 #header {
     background-color: #106EEA;
 }
 
 .email {
+    font: 400 20px 'OpenSans-Regular', sans-serif;
     color: white;
-    font: 500 20px 'Open-Sans Regular', sans-serif;
 }
 
 .tel {
+    font: 400 20px 'OpenSans-Regular', sans-serif;
     color: white;
-    font: 500 20px 'Open-Sans Regular', sans-serif;
+    margin-left: 120px;
 }
 
 .contato {
-    margin-right: 30px;
-    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* FIM DO HEADER */
+
+/* MAIN */
+
+.nome {
+    font: 700 45px 'PoppinsBold', sans-serif;
+}
+
+.item {
+    font: 400 22px 'OpenSans-Regular', sans-serif;
+    color: black;
+    margin-left: 25px;
+}
+
+.inicio {
+    margin: -338px 0 350px 550px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
+}
+
+.titulo {
+    font: 700 60px 'PoppinsBold', sans-serif;
+}
+
+.especialistas {
+    font: 400 38px 'PoppinsRegular', sans-serif;
+}
+
+/* SOBRE NÓS */
+
+.imagem-equipe {
+    width: 430px;
+    margin-left: 35px;
+
+}
+
+.conteudo {
+    text-align: justify;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.titulo1 {
+    color: black;
+}
+
+.titulo2 {
+    color: #106EEA;
+    margin-left: 10px;
+}
+
+.titulos {
+    font: 700 25px 'Roboto Bold', sans-serif;
+    display: flex;
+    text-align: justify;
+    margin-bottom: 15px;
+    
+}
+
+.texto1 {
+    font: 400 22px 'OpenSans-Regular', sans-serif;
+    text-align: justify;
+}
+
+.sobrenos {
+    margin: -60px 0px 0px;
+}
+
+.paragrafo1 {
+    margin-top: 70px;
+}
+
+/* CAIXAS */
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.caixa {
+    background-color: #F1F6FE;
+    border: 1px solid #8CA9CE;
+    text-align: center;
+    height: 245px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 30px 20px;
+}
+
+.caixa .imagem img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.numero {
+    font: 700 30px 'Open-Sans Bold', sans-serif;
+}
+
+.palavra {
+    font: 500 20px 'Roboto Regular', sans-serif;
+}
+
+/* NOSSOS SERVIÇOS */
+
+.paragrafo2 {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.texto2 {
+    font: 400 22px 'OpenSans-Regular', sans-serif;
+    text-align: center;
+}
+
+.titulos2 {
+    font: 700 25px 'Roboto Bold', sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.caixas-servico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
+
+.caixa-servico {
+    border: 1px black solid;
+    width: 250px;
+    height: 190px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.opcoes {
+    font: 600 20px 'Roboto Bold', sans-serif;
+    width: 100%;
+    text-align: center;
+
+}
+
+.nossa-equipe {
+    margin-top: 70px;
+}
+
+.equipe {
+    display: flex;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pessoa {
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 0 50px;
+}
+
+.titorem {
+    font: 700 22px 'Poppins Bold', sans-serif;
+}
+
+.cargo {
+    font: 500 15px 'Roboto Regular', sans-serif;
+}
+
+.lorem {
+    padding: 10px 15px;
+}
+
+.texto-final {
+    text-align: justify;
+    font: 400 22px 'OpenSans-Regular', sans-serif;
+}
+
+/* LINHAS */
+
+.linha {
+    height: 2px;
+    background-color: #1150A3;
+    margin: 40px 0;
+}
+
+/* CONTATO */
+
+.titulo4 {
+    color: #106EEA;
+    text-align: center;
+    font: 700 35px 'Roboto Bold', sans-serif;
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.endereco {
+    border: 1px solid #8CA9CE;
+    height: 380px;
+    width: 35%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.titureco {
+        font: 700 25px 'Roboto Bold', sans-serif;
+        margin-bottom: 30px;
+    
+}
+
+.textoreco {
+        font:500 22px 'Roboto Regular', sans-serif;
+        text-align: center;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.forms {
+    margin-left: 50px;
+}
+
+input, textarea {
+    background-color: #E5E5E5;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+input {
+    height: 60px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.botao {
+    text-align: center;
+}
+
+button {
+    background-color: #106EEA;
+    color: white;
+    font: 600 22px 'Roboto Bold', sans-serif;
+    border-radius: 15px;
+    width: 70%;
+    height: 60px;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #1150A3;
+    margin-top: 50px;
+}
+
+.footer .container {
+    justify-content: space-around;
+} 
+.footer .container .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.footer .container .menu a {
+    color: white;
+}
+
+.redes .logos img {
+    width: 50px;
+    height: auto;
+}
+
+.redes .titulo {
+    font: 500 30px 'Open-Sans Regular', sans-serif ;
+    color: white;
 }
